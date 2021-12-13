@@ -13,7 +13,6 @@ const parseInput = (input: string) => {
   return input.split("\n").map((line) => line.split("").map((value) => +value));
 };
 
-// Write position mapper using 2 for loops.
 const positionMapper = (parsedInput: number[][]): Position[][] => {
   const mappedArr: Position[][] = [];
   for (let i = 0; i < parsedInput.length; i++) {
